@@ -49,7 +49,7 @@ class ProjectKeywordCreateView(generics.CreateAPIView):
     permission_classes= (permissions.IsAuthenticated,)
 
     def perform_create(self, serializer):
-        print("🚀 DEBUG: perform_create() called")  # ✅ Debugging
+        print("🚀 DEBUG: perform_create() called") 
         print("🚀 DEBUG: Received data:", self.request.data)
 
         project = serializer.validated_data['project']
